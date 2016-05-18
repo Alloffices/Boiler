@@ -1,0 +1,87 @@
+* {
+	text-decoration:none;
+	list-style-type:none;
+}
+html, body {
+	font-family: 'Raleway', sans-serif;
+}
+
+.cf:before, .cf:after {
+	content: " ";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+header .header-content .header-content-inner a {
+	border-radius: 0px;
+}
+nav .btn {
+	border-radius: 0px;
+	color: #fff;
+}
+
+/*--------------
+Top Navigation Starts Here
+--------------*/
+nav {
+	font-family: 'Raleway', sans-serif;
+}
+nav .container-fluid {
+	/*Will add styles to top navigation*/
+}
+nav  .container-fluid {
+	padding:0 6em;
+}
+.navbar-default .navbar-nav li a {
+     color: #fff;
+}
+
+/*Login Button*/
+nav #ft {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+	font-size:14px;
+	font-weight:300;
+	letter-spacing:2px;
+	text-transform:uppercase;
+	padding:3px 1em;
+	margin-top:9%;
+}
+
+/*--------------
+Hero Starts Here
+--------------*/
+header {
+	font-family: 'Raleway', sans-serif;
+	margin-top:49px;
+
+	min-height:auto;
+	width:100%;
+	padding:6% 20% 10% 20%;
+}
+header .header-content .header-content-inner {
+	text-align:center;
+}
+header .header-content .header-content-inner h1 {
+	font-size:70px;
+	font-weight:300;
+}
+header .header-content .header-content-inner p {
+	font-size:20px;
+	font-weight:300;
+	padding:1em 20%;
+}
+header .header-content .header-content-inner a {
+	font-size:16px;
+	font-weight:300;
+	letter-spacing:2px;
+	text-transform:uppercase;
+	padding:.8em 2em;
+}
+
+
+
+
