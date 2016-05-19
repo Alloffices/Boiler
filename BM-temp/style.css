@@ -37,7 +37,7 @@ nav .container-fluid {
 	/*Will add styles to top navigation*/
 }
 nav  .container-fluid {
-	padding:0 6em;
+	padding:.5em 6em;
 }
 .navbar-default .navbar-nav li a {
      color: #fff;
@@ -62,11 +62,20 @@ nav .navbar-header a img {
 /* ****
 Navigation Media Queries
 **** */
-
 @media screen and (max-width: 768px) {
 	nav  .container-fluid {
-		padding:0 2em;
+		padding:.5em 2em;
 	}
+	nav li a {
+		font-size:20px;
+		font-weight:300;
+		text-align:center;
+	}
+	nav #ft {
+		padding:1em 1em;
+		font-size:20px;
+	}
+
 }
 
 /*---------------------------------------------------------
@@ -78,10 +87,10 @@ header {
 
 	min-height:auto;
 	width:100%;
-	padding:6% 25% 10% 25%;
+	padding:14% 25% 16% 25%;
 	background:#ecf0f1;
 	background-image:url('https://images.unsplash.com/photo-1427088625471-da8a7193afd3?format=auto&auto=compress&dpr=1&crop=entropy&fit=crop&w=1254&h=705&q=80');
-	background-position:center;
+	background-position:right;
 	background-size:cover;
 	background-repeat: no-repeat;
 	position: relative;
@@ -94,7 +103,7 @@ header {
    width: 100%;
    height:100%;
    background-color: black;
-   opacity: 0.3;
+   opacity: 0.35;
    z-index:-2;
 }
 header .header-content .header-content-inner {
@@ -122,7 +131,6 @@ header .header-content .header-content-inner a {
 /* ****
 Hero Media Queries
 **** */
-
 @media screen and (max-width: 1023px) {
 	header .header-content .header-content-inner h1 {
     font-size: 50px;
@@ -162,7 +170,7 @@ Hero Media Queries
 	header .header-content .header-content-inner p {
 		font-size:17px;
 		font-weight:300;
-		padding:1em 10%;
+		padding:1em 5%;
 		margin-bottom:1em;
 	}
 }
@@ -189,6 +197,16 @@ section {
 	color:#282c37;
 	width:88%;
 }
+
+/* ****
+Pre-Header Media Queries
+**** */
+@media screen and (max-width: 568px) {
+	.bg-pre-content {
+		padding:2em 0 4em 0;
+	}
+}
+
 
 /*---------------------------------------------------------
 Features Content Starts Here
@@ -243,7 +261,6 @@ Features Content Starts Here
 /* ****
 Features Content Media Queries
 **** */
-
 @media screen and (max-width: 992px) {
 	.list-group {
 	    width: 50%;
@@ -319,7 +336,6 @@ Platform benefits Starts Here
 /* ****
 Platform benefits Media Queries
 **** */
-
 @media screen and (max-width: 991px) {
 	.bg-content .pb #feature-cog  {
 		width: 20px;
@@ -396,7 +412,6 @@ Trusted Companies Content Starts Here
 /* ****
 Trusted Companies Media Queries
 **** */
-
 @media screen and (max-width: 1200px) {
 	.bg-company img {
 		width:50%;
@@ -430,7 +445,6 @@ Trusted Companies Media Queries
 /*---------------------------------------------------------
 Testimonials Content Starts Here
 ---------------------------------------------------------*/
-
 .bg-testimonials {
 	min-height:auto;
 	padding:3em 0 5em 0;
@@ -490,7 +504,6 @@ Testimonials Content Starts Here
 /* ****
 Testimonials Media Queries
 **** */
-
 @media screen and (max-width: 1023px) {
 	.bg-testimonials .content {
 	    width: 88%;
@@ -557,8 +570,13 @@ Bottom Call-to-action Starts Here
 /* ****
 Bottom Call-to-action Media Queries
 **** */
-
 @media screen and (max-width: 568px) {
+	.bg-call {
+		margin:0 auto;
+		text-align:center;
+		background:#ecf0f1;
+		padding:4em 0 0 0;
+	}
 	#super-lap {
 		background:url('https://cdn0.vox-cdn.com/thumbor/SI8op_HeoHy-McFrBIlt7z16sUY=/cdn0.vox-cdn.com/uploads/chorus_asset/file/3782882/image_large_2x.0.png');
 		background-size:cover;
@@ -572,6 +590,15 @@ Bottom Call-to-action Media Queries
 		width:40%;
 		margin-bottom:2em;
 	}
+	.bg-call .container a {
+		margin-bottom:4em;
+		font-size:16px;
+		font-weight:300;
+		letter-spacing:2px;
+		text-transform:uppercase;
+		padding:.8em 1em;
+		border-radius:0;
+	}
 }
 
 
@@ -580,7 +607,7 @@ Footer Starts Here
 ---------------------------------------------------------*/
 footer {
 	font-family: 'Raleway', sans-serif;
-	padding:6% 9% 1% 9%;
+	padding:3% 9% 1% 9%;
 	width:100%;
 	background:#272625;
 	color:#fff;
@@ -599,7 +626,7 @@ footer a {
   transition: color 0.5s ease;
 }
 footer a:hover {
-  color: rgba(255,255,255,.8);
+  color: rgba(255,255,255,1);
   text-decoration:none;
 }
 footer ul, ol {
@@ -617,10 +644,10 @@ footer img {
 footer p {
 	margin-top:2em;
 }
+
 /* ****
 Footer Media Queries
 **** */
-
 @media screen and (max-width: 568px) {
 	#ft {
 		border:.5px solid rgba(236,240,241,.1);

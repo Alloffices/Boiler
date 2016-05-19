@@ -1,11 +1,639 @@
-html,
-body {
-	margin:0;
-	color:#333;
-	background:#fff;
-	font:sans-serif;
+* {
+	text-decoration:none;
+	list-style-type:none;
+	-webkit-box-shadow:none;
+}
+html, body {
+	font-family: 'Raleway', sans-serif;
 }
 
-body {
-	padding:20px;
+.cf:before, .cf:after {
+	content: " ";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+header .header-content .header-content-inner a {
+	border-radius: 0px;
+}
+nav .btn {
+	border-radius: 0px;
+	color: #fff;
+}
+
+/*---------------------------------------------------------
+Top Navigation Starts Here
+---------------------------------------------------------*/
+nav {
+	font-family: 'Raleway', sans-serif;
+}
+nav.navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+}
+nav .container-fluid {
+	/*Will add styles to top navigation*/
+}
+nav  .container-fluid {
+	padding:0 6em;
+}
+.navbar-default .navbar-nav li a {
+     color: #fff;
+}
+/*Login Button*/
+nav #ft {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+	font-size:14px;
+	font-weight:300;
+	letter-spacing:2px;
+	text-transform:uppercase;
+	padding:3px 1em;
+	margin-top:9%;
+}
+nav .navbar-header a img {
+    width: 120px;
+    margin-top: -10px;
+}
+
+/* ****
+Navigation Media Queries
+**** */
+
+@media screen and (max-width: 768px) {
+	nav  .container-fluid {
+		padding:0 2em;
+	}
+}
+
+/*---------------------------------------------------------
+Hero Starts Here
+---------------------------------------------------------*/
+header {
+	font-family: 'Raleway', sans-serif;
+	margin-top:49px;
+
+	min-height:auto;
+	width:100%;
+	padding:6% 25% 10% 25%;
+	background:#ecf0f1;
+	background-image:url('https://images.unsplash.com/photo-1427088625471-da8a7193afd3?format=auto&auto=compress&dpr=1&crop=entropy&fit=crop&w=1254&h=705&q=80');
+	background-position:center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index:-1;
+}
+#color-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height:100%;
+   background-color: black;
+   opacity: 0.3;
+   z-index:-2;
+}
+header .header-content .header-content-inner {
+	text-align:center;
+}
+header .header-content .header-content-inner h1 {
+	font-size:70px;
+	font-weight:300;
+	color:#fff;
+}
+header .header-content .header-content-inner p {
+	font-size:20px;
+	font-weight:300;
+	padding:1em 20%;
+	color:#fff;
+}
+header .header-content .header-content-inner a {
+	font-size:16px;
+	font-weight:300;
+	letter-spacing:2px;
+	text-transform:uppercase;
+	padding:.8em 2em;
+}
+
+/* ****
+Hero Media Queries
+**** */
+
+@media screen and (max-width: 1023px) {
+	header .header-content .header-content-inner h1 {
+    font-size: 50px;
+    font-weight: 300;
+	}
+	header .header-content .header-content-inner p {
+		font-size:17px;
+		font-weight:300;
+		padding:1em 15%;
+	}
+}
+
+@media screen and (max-width: 721px) {
+	header {
+		padding:16% 15% 30% 15%;
+	}
+	header .header-content .header-content-inner h1 {
+    font-size: 40px;
+    font-weight: 300;
+	}
+	header .header-content .header-content-inner p {
+		font-size:17px;
+		font-weight:300;
+		padding:1em 15%;
+		margin-bottom:1em;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	header {
+		padding:16% 15% 30% 15%;
+	}
+	header .header-content .header-content-inner h1 {
+    font-size: 40px;
+    font-weight: 300;
+	}
+	header .header-content .header-content-inner p {
+		font-size:17px;
+		font-weight:300;
+		padding:1em 10%;
+		margin-bottom:1em;
+	}
+}
+
+/*---------------------------------------------------------
+Pre Content Starts Here
+---------------------------------------------------------*/
+section {
+	font-family: 'Raleway', sans-serif;
+}
+.bg-pre-content {
+	padding:4em 0 7em 0;
+}
+
+.section-heading {
+	font-size:35px;
+	font-weight:300;
+	color:#282c37;
+}
+.text-faded {
+	margin:0 auto;
+	font-size:20px;
+	font-weight:300;
+	color:#282c37;
+	width:88%;
+}
+
+/*---------------------------------------------------------
+Features Content Starts Here
+---------------------------------------------------------*/
+.bg-content {
+	min-height:auto;
+	padding:6em 0 8em 0;
+	background:#ecf0f1;
+  overflow-x: hidden;
+}
+.bg-content .section-heading {
+	line-height: 46px;
+    font-size: 40px;
+    margin-bottom:1em;
+}
+.bg-content #lap-top {
+	width:190%;
+}
+.bg-content #feature-cog  {
+	width: 29px;
+    float: left;
+    margin-right: 1em;
+    padding-bottom: 35px;
+}
+.bg-content .list-group-item {
+	padding:1.5em 2em;
+	background-color: transparent;
+  border: 1px solid transparent; 
+}
+.bg-content .list-group-item-heading {
+	text-transform:uppercase;
+	font-weight:400;
+	font-size: 20px;
+}
+.bg-content .list-group-item-text {
+	font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}
+.bg-content .list-group-item a {
+	font-size:16px;
+	font-weight:300;
+	letter-spacing:2px;
+	text-transform:uppercase;
+	padding:.8em 2em;
+	border-radius:0;
+}
+.responsive {
+	display:none;
+}
+
+/* ****
+Features Content Media Queries
+**** */
+
+@media screen and (max-width: 992px) {
+	.list-group {
+	    width: 50%;
+	    float: left;
+	}
+	.container {
+		width:auto;
+	}
+}
+@media screen and (max-width: 991px) {
+	.bg-content #lap-top {
+		width:100%;
+	}
+	.ipad {
+		display:none;
+	}
+	.mobile-ft-list {
+		display:block;
+	}
+	.bg-content .section-heading {
+	    line-height: 46px;
+	    font-size: 40px;
+	    margin-bottom: 0em;
+	    text-align:center;
+	}
+	.list-group {
+	    padding-left: 0;
+	    margin-bottom: 20px;
+	    width: 100%;
+	}
+	.responsive {
+		display:block;
+	}
+	.desktop {
+		display:none;
+	}
+}
+@media screen and (min-width: 991px) {
+	.ipad {
+		display:block;
+		width:100%;
+	}
+	.mobile-ft-list {
+		display:none;
+	}
+	.mobile-spacer {
+		 margin-bottom:4em;
+	}
+}
+
+/*---------------------------------------------------------
+Platform benefits Starts Here
+---------------------------------------------------------*/
+.bg-content .pb .col-lg-6 {
+  width: 33%;
+}
+.bg-content .pb .col-md-12 {
+  float:left;
+}
+.bg-content .pb {
+	width:77%;
+}
+.bg-content .pb #feature-cog  {
+	width: 29px;
+  float: left;
+  margin-right: 1em;
+  padding-bottom: 75px;
+}
+.bg-content .pb h3 {
+	font-weight:300;
+}
+
+/* ****
+Platform benefits Media Queries
+**** */
+
+@media screen and (max-width: 991px) {
+	.bg-content .pb #feature-cog  {
+		width: 20px;
+	  float: left;
+	  margin-right: 1em;
+	  padding-bottom: 75px;
+	}
+	.bg-content .pb {
+		width:100%;
+	}	
+	.bg-content .pb #feature-cog  {
+	  padding-bottom: 90px;
+	}
+}
+@media screen and (max-width: 742px) {
+	.bg-content .pb #feature-cog  {
+	  padding-bottom: 150px;
+	}
+	.bg-content .pb {
+    width: 106%;
+	}
+	.bg-content .pb .col-lg-6 {
+	  width: 30%;
+	}
+	.bg-content .pb h3 {
+		font-size:16px;
+		font-weight:500;
+	}
+	.bg-content .pb p {
+		font-size:14px;
+	}
+}
+@media screen and (max-width: 614px) {
+	.bg-content .pb {
+    width: 90%;
+	}
+	.bg-content .pb .service-box{
+	}
+	.bg-content .pb .col-lg-6 {
+	  width: 90%;
+	}
+	.bg-content .pb h3 {
+		font-size:20px;
+		font-weight:500;
+	}
+	.bg-content .pb p {
+		font-size:16px;
+	}
+	.bg-content .pb .col-lg-6 {
+	    width: 100%;
+	    margin-bottom: -6em;
+	}
+}
+
+
+/*---------------------------------------------------------
+Trusted Companies Content Starts Here
+---------------------------------------------------------*/
+.bg-company {
+	min-height:auto;
+	padding:6em 0 3em 0;
+}
+.bg-company .text-faded {
+	color:#95a5a6;
+}
+.bg-company .col-lg-3 {
+	margin-top:4em;
+}
+.bg-company img {
+	width:50%;
+	opacity:.4;
+}
+
+/* ****
+Trusted Companies Media Queries
+**** */
+
+@media screen and (max-width: 1200px) {
+	.bg-company img {
+		width:50%;
+	}
+	.bg-company .col-lg-3 {
+	    margin-top: 4em;
+	    float: left;
+	    width: 25%;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	.bg-company {
+		min-height:auto;
+		padding:1em 0 3em 0;
+	}
+	.bg-company .section-heading {
+		font-size:24px;
+		padding:20px 0 10px 0;
+	}
+	.bg-company img {
+		width:80%;
+	}
+	.bg-company .col-lg-3 {
+	    margin-top: 4em;
+	    float: left;
+	    width: 25%;
+	}
+}
+
+/*---------------------------------------------------------
+Testimonials Content Starts Here
+---------------------------------------------------------*/
+
+.bg-testimonials {
+	min-height:auto;
+	padding:3em 0 5em 0;
+	overflow: hidden;
+	width:100%;
+	margin:0 auto;
+}
+.bg-testimonials .text-faded {
+	color:#95a5a6;
+}
+
+/* Content */
+.content {
+    padding-top: 30px;
+}
+.testimonials {
+	margin-top:2em;
+}
+
+/* Testimonials */
+.testimonials blockquote {
+    background: #fff;
+    color: #7f8c8d;
+    font-size: 18px;
+    line-height: 30px;
+    border: 1px solid #eee;
+    border-radius: 16px;
+    padding:2em;
+}
+.testimonials .carousel-info img {
+    border-radius: 150px !important;
+    height: 75px;
+    padding: 2px 3px 3px 3px;
+    margin-right:1em;
+}
+.testimonials .carousel-info span {
+    display: block;
+}
+.testimonials span.testimonials-name {
+    color: #282c37;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 15px 0 7px;
+}
+.testimonials span.testimonials-post {
+    color: #656565;
+    font-size: 12px;
+}
+.testimonials .col-md-6 {
+    width: 32%;
+}
+/* add media queries */
+.bg-testimonials .content {
+    width: 70%;
+}
+
+/* ****
+Testimonials Media Queries
+**** */
+
+@media screen and (max-width: 1023px) {
+	.bg-testimonials .content {
+	    width: 88%;
+	}
+}
+@media screen and (max-width: 991px) {
+	.bg-testimonials .content {
+	    width: 90%;
+	}
+	.testimonials {
+		margin-top:10em;
+	}
+	.spacer {
+		margin-top:0px;
+	}
+	.mobile {
+		display:none;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	.bg-company .section-heading {
+	    font-size: 30px;
+	    padding: 20px 0 10px 0;
+	}
+}
+
+/*---------------------------------------------------------
+Bottom Call-to-action Starts Here
+---------------------------------------------------------*/
+.bg-call {
+	margin:0 auto;
+	text-align:center;
+	background:#ecf0f1;
+	padding:6em 0 0 0;
+}
+.bg-call .container h2 {
+	margin-bottom:1em;
+	font-weight:300;
+}
+.bg-call .container a {
+	margin-bottom:4em;
+	font-size:16px;
+	font-weight:300;
+	letter-spacing:2px;
+	text-transform:uppercase;
+	padding:.8em 2em;
+	border-radius:0;
+}
+.bg-call #logo {
+	width:27%;
+	margin-bottom:2em;
+}
+#super-lap {
+	background:url('https://cdn0.vox-cdn.com/thumbor/SI8op_HeoHy-McFrBIlt7z16sUY=/cdn0.vox-cdn.com/uploads/chorus_asset/file/3782882/image_large_2x.0.png');
+	background-size:cover;
+	background-position:top;
+	background-repeat:no-repeat;
+	width: 100%;
+	height:333px;
+	-webkit-box-shadow:none;
+}
+
+/* ****
+Bottom Call-to-action Media Queries
+**** */
+
+@media screen and (max-width: 568px) {
+	#super-lap {
+		background:url('https://cdn0.vox-cdn.com/thumbor/SI8op_HeoHy-McFrBIlt7z16sUY=/cdn0.vox-cdn.com/uploads/chorus_asset/file/3782882/image_large_2x.0.png');
+		background-size:cover;
+		background-position:top;
+		background-repeat:no-repeat;
+		width: 100%;
+		height:150px;
+		-webkit-box-shadow:none;
+	}
+	.bg-call #logo {
+		width:40%;
+		margin-bottom:2em;
+	}
+}
+
+
+/*---------------------------------------------------------
+Footer Starts Here
+---------------------------------------------------------*/
+footer {
+	font-family: 'Raleway', sans-serif;
+	padding:3% 9% 1% 9%;
+	width:100%;
+	background:#272625;
+	color:#fff;
+}
+footer h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+footer a {
+  font-size: 15px;
+	line-height: 30px;
+  color: rgba(255,255,255,.4);
+  font-weight: 300;
+  transition: color 0.5s ease;
+}
+footer a:hover {
+  color: rgba(255,255,255,1);
+  text-decoration:none;
+}
+footer ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-left: 0px;
+}
+footer img {
+	width:40%;
+	text-align:center;
+}
+#ft {
+	border:.5px solid rgba(236,240,241,.1);
+}
+footer p {
+	margin-top:2em;
+}
+/* ****
+Footer Media Queries
+**** */
+
+@media screen and (max-width: 568px) {
+	#ft {
+		border:.5px solid rgba(236,240,241,.1);
+	}
+	footer a {
+	  font-size: 15px;
+		line-height: 33px;
+	  color: rgba(255,255,255,.4);
+	  font-weight: 300;
+	  transition: color 0.5s ease;
+	}
+	footer a:hover {
+	  color: rgba(255,255,255,1);
+	  text-decoration:none;
+	}
 }
