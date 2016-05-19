@@ -1,6 +1,7 @@
 * {
 	text-decoration:none;
 	list-style-type:none;
+	-webkit-box-shadow:none;
 }
 html, body {
 	font-family: 'Raleway', sans-serif;
@@ -22,9 +23,9 @@ nav .btn {
 	color: #fff;
 }
 
-/*------------------------
+/*---------------------------------------------------------
 Top Navigation Starts Here
-------------------------*/
+---------------------------------------------------------*/
 nav {
 	font-family: 'Raleway', sans-serif;
 }
@@ -68,9 +69,9 @@ Navigation Media Queries
 	}
 }
 
-/*--------------
+/*---------------------------------------------------------
 Hero Starts Here
---------------*/
+---------------------------------------------------------*/
 header {
 	font-family: 'Raleway', sans-serif;
 	margin-top:49px;
@@ -148,9 +149,9 @@ Hero Media Queries
 	}
 }
 
-/*---------------------
+/*---------------------------------------------------------
 Pre Content Starts Here
----------------------*/
+---------------------------------------------------------*/
 section {
 	font-family: 'Raleway', sans-serif;
 }
@@ -171,9 +172,9 @@ section {
 	width:88%;
 }
 
-/*--------------------------
+/*---------------------------------------------------------
 Features Content Starts Here
---------------------------*/
+---------------------------------------------------------*/
 .bg-content {
 	min-height:auto;
 	padding:6em 0 8em 0;
@@ -225,7 +226,7 @@ Features Content Starts Here
 Features Content Media Queries
 **** */
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
 	.list-group {
 	    width: 50%;
 	    float: left;
@@ -234,7 +235,7 @@ Features Content Media Queries
 		width:auto;
 	}
 }
-@media screen and (max-width: 891px) {
+@media screen and (max-width: 991px) {
 	.bg-content #lap-top {
 		width:100%;
 	}
@@ -248,6 +249,7 @@ Features Content Media Queries
 	    line-height: 46px;
 	    font-size: 40px;
 	    margin-bottom: 0em;
+	    text-align:center;
 	}
 	.list-group {
 	    padding-left: 0;
@@ -261,7 +263,7 @@ Features Content Media Queries
 		display:none;
 	}
 }
-@media screen and (min-width: 892px) {
+@media screen and (min-width: 991px) {
 	.ipad {
 		display:block;
 		width:100%;
@@ -272,19 +274,11 @@ Features Content Media Queries
 	.mobile-spacer {
 		 margin-bottom:4em;
 	}
-	@media (min-width: 992px) {
-	.bg-content .col-md-6 {
-	    width: 44%;
-    	padding-left: 57px;
-	}
-	.bg-content .row {
-
-	}
 }
 
-/*--------------------------
+/*---------------------------------------------------------
 Platform benefits Starts Here
---------------------------*/
+---------------------------------------------------------*/
 .bg-content .pb .col-lg-6 {
   width: 33%;
 }
@@ -363,9 +357,9 @@ Platform benefits Media Queries
 }
 
 
-/*--------------------------
+/*---------------------------------------------------------
 Trusted Companies Content Starts Here
---------------------------*/
+---------------------------------------------------------*/
 .bg-company {
 	min-height:auto;
 	padding:6em 0 3em 0;
@@ -415,9 +409,9 @@ Trusted Companies Media Queries
 	}
 }
 
-/*------------------------------
+/*---------------------------------------------------------
 Testimonials Content Starts Here
-------------------------------*/
+---------------------------------------------------------*/
 
 .bg-testimonials {
 	min-height:auto;
@@ -506,7 +500,47 @@ Testimonials Media Queries
 	}
 }
 
+/*---------------------------------------------------------
+ Starts Here
+---------------------------------------------------------*/
 
+.bg-call {
+	margin:0 auto;
+	text-align:center;
+	background:#ecf0f1;
+	padding:6em 0 0 0;
+}
+.bg-call .container h2 {
+	margin-bottom:1em;
+	font-weight:300;
+}
+.bg-call .container a {
+	margin-bottom:4em;
+	font-size:16px;
+	font-weight:300;
+	letter-spacing:2px;
+	text-transform:uppercase;
+	padding:.8em 2em;
+	border-radius:0;
+}
+.bg-call #logo {
+	width:27%;
+	margin-bottom:2em;
+}
+#super-lap {
+	background:url('https://cdn0.vox-cdn.com/thumbor/SI8op_HeoHy-McFrBIlt7z16sUY=/cdn0.vox-cdn.com/uploads/chorus_asset/file/3782882/image_large_2x.0.png');
+	background-size:cover;
+	background-position:top;
+	background-repeat:no-repeat;
+	width: 100%;
+	height:333px;
+	-webkit-box-shadow:none;
+}
+
+
+/* ****
+Testimonials Media Queries
+**** */
 
 
 
