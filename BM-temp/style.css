@@ -272,6 +272,14 @@ Features Content Media Queries
 	.mobile-spacer {
 		 margin-bottom:4em;
 	}
+	@media (min-width: 992px) {
+	.bg-content .col-md-6 {
+	    width: 44%;
+    	padding-left: 57px;
+	}
+	.bg-content .row {
+
+	}
 }
 
 /*--------------------------
