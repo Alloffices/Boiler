@@ -19,6 +19,47 @@ $(document).ready(function() {
 	);
 	wow.init();
 
+	$(function() {
+		$('.l-one').on('mouseover', function() {
+			$('.l-one .list-group-item').addClass('active');
+			$('.desktop .list-group').prepend('<img id="lap-top" src="http://images.apple.com/macbook-air/images/overview_wireless_hero_enhanced.png" />')
+			$('.desktop .list-group').remove('<img id="lap-top" src="http://www.metrocomputeratlanta.com/wp-content/uploads/2015/06/MBPR13.png" />')
+			$('.desktop .list-group').remove('<img id="lap-top" src="http://sophisticatedfinance.typepad.com/.a/6a00e00981da57883301053677a277970c-pi" />')
+		});
+
+		$('.l-one').on('mouseout', function() {
+			$('.l-one .list-group-item').removeClass('active');
+			$('.desktop img').hide();
+		});
+	});
+
+	$(function() {
+		$('.l-two').on('mouseover', function() {
+			$('.l-two .list-group-item').addClass('active');
+			$('.desktop .list-group').prepend('<img id="lap-top" src="http://www.metrocomputeratlanta.com/wp-content/uploads/2015/06/MBPR13.png" />')
+			$('.desktop .list-group').remove('<img id="lap-top" src="http://images.apple.com/macbook-air/images/overview_wireless_hero_enhanced.png" />')
+			$('.desktop .list-group').remove('<img id="lap-top" src="http://sophisticatedfinance.typepad.com/.a/6a00e00981da57883301053677a277970c-pi" />')
+		});
+
+		$('.l-two').on('mouseout', function() {
+			$('.l-two .list-group-item').removeClass('active');
+			$('.desktop img').hide();
+		});
+	});
+
+	$(function() {
+		$('.l-three').on('mouseover', function() {
+			$('.l-three .list-group-item').addClass('active');
+			$('.desktop .list-group').prepend('<img id="lap-top" src="http://sophisticatedfinance.typepad.com/.a/6a00e00981da57883301053677a277970c-pi" />')
+			$('.desktop .list-group').remove('<img id="lap-top" src="http://www.metrocomputeratlanta.com/wp-content/uploads/2015/06/MBPR13.png" />')
+			$('.desktop .list-group').remove('<img id="lap-top" src="http://images.apple.com/macbook-air/images/overview_wireless_hero_enhanced.png" />')
+		});
+
+		$('.l-three').on('mouseout', function() {
+			$('.l-three .list-group-item').removeClass('active');
+			$('.desktop img').hide();
+		});
+	});
 
 	
 });
