@@ -25,6 +25,9 @@ nav .btn {
 .thing {
 	display:none;
 }
+.thing-2 {
+	display:block;
+}
 
 /*---------------------------------------------------------
 Top Navigation Starts Here
