@@ -178,7 +178,7 @@ Features Content Starts Here
 	min-height:auto;
 	padding:6em 0 8em 0;
 	background:#ecf0f1;
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 .bg-content .section-heading {
 	line-height: 46px;
@@ -217,28 +217,61 @@ Features Content Starts Here
 	padding:.8em 2em;
 	border-radius:0;
 }
-.ipad #lap-top {
+.responsive {
 	display:none;
 }
+
 /* ****
 Features Content Media Queries
 **** */
 
 @media screen and (max-width: 991px) {
+	.list-group {
+	    width: 50%;
+	    float: left;
+	}
+	.container {
+		width:auto;
+	}
+}
+@media screen and (max-width: 891px) {
 	.bg-content #lap-top {
 		width:100%;
+	}
+	.ipad {
+		display:none;
+	}
+	.mobile-ft-list {
+		display:block;
+	}
+	.bg-content .section-heading {
+	    line-height: 46px;
+	    font-size: 40px;
+	    margin-bottom: 0em;
+	}
+	.list-group {
+	    padding-left: 0;
+	    margin-bottom: 20px;
+	    width: 100%;
+	}
+	.responsive {
+		display:block;
 	}
 	.desktop {
 		display:none;
 	}
-	.ipad #lap-top {
+}
+@media screen and (min-width: 892px) {
+	.ipad {
 		display:block;
 		width:100%;
 	}
-}
-@media screen and (max-width: 742px) {
-}
-@media screen and (max-width: 614px) {
+	.mobile-ft-list {
+		display:none;
+	}
+	.mobile-spacer {
+		 margin-bottom:4em;
+	}
 }
 
 /*--------------------------
@@ -459,6 +492,10 @@ Testimonials Media Queries
 }
 
 @media screen and (max-width: 568px) {
+	.bg-company .section-heading {
+	    font-size: 30px;
+	    padding: 20px 0 10px 0;
+	}
 }
 
 
