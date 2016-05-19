@@ -579,16 +579,61 @@ Bottom Call-to-action Media Queries
 Footer Starts Here
 ---------------------------------------------------------*/
 footer {
-	padding:4% 9% 10% 9%;
+	font-family: 'Raleway', sans-serif;
+	padding:6% 9% 1% 9%;
 	width:100%;
 	background:#272625;
+	color:#fff;
 }
-
+footer h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+footer a {
+  font-size: 15px;
+	line-height: 30px;
+  color: rgba(255,255,255,.4);
+  font-weight: 300;
+  transition: color 0.5s ease;
+}
+footer a:hover {
+  color: rgba(255,255,255,.8);
+  text-decoration:none;
+}
+footer ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-left: 0px;
+}
+footer img {
+	width:40%;
+	text-align:center;
+}
+#ft {
+	border:.5px solid rgba(236,240,241,.1);
+}
+footer p {
+	margin-top:2em;
+}
 /* ****
 Footer Media Queries
 **** */
 
-
-
-
-
+@media screen and (max-width: 568px) {
+	#ft {
+		border:.5px solid rgba(236,240,241,.1);
+	}
+	footer a {
+	  font-size: 15px;
+		line-height: 33px;
+	  color: rgba(255,255,255,.4);
+	  font-weight: 300;
+	  transition: color 0.5s ease;
+	}
+	footer a:hover {
+	  color: rgba(255,255,255,1);
+	  text-decoration:none;
+	}
+}
