@@ -66,7 +66,3 @@ $(document).ready(function() {
 	});
 });
 
-document.getElementByClassName("desktop list-group").addEventListener("mouseout", function() {
-   document.getElementByClassname("desktop list-group img").removeClass('thing');
-}, false);
-
