@@ -22,6 +22,9 @@ nav .btn {
 	border-radius: 0px;
 	color: #fff;
 }
+.thing {
+	display:none;
+}
 
 /*---------------------------------------------------------
 Top Navigation Starts Here

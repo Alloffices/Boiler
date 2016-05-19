@@ -25,11 +25,13 @@ $(document).ready(function() {
 			$('.desktop .list-group').prepend('<img id="lap-top" src="http://images.apple.com/macbook-air/images/overview_wireless_hero_enhanced.png" />')
 			$('.desktop .list-group').remove('<img id="lap-top" src="http://www.metrocomputeratlanta.com/wp-content/uploads/2015/06/MBPR13.png" />')
 			$('.desktop .list-group').remove('<img id="lap-top" src="http://sophisticatedfinance.typepad.com/.a/6a00e00981da57883301053677a277970c-pi" />')
+			$('.desktop .list-group').remove('<img id="lap-top" class="thing" src="https://cdn0.vox-cdn.com/thumbor/SI8op_HeoHy-McFrBIlt7z16sUY=/cdn0.vox-cdn.com/uploads/chorus_asset/file/3782882/image_large_2x.0.png">');
 		});
 
 		$('.l-one').on('mouseout', function() {
 			$('.l-one .list-group-item').removeClass('active');
 			$('.desktop img').hide();
+			$('.thing').addClass('thing');
 		});
 	});
 
@@ -44,6 +46,7 @@ $(document).ready(function() {
 		$('.l-two').on('mouseout', function() {
 			$('.l-two .list-group-item').removeClass('active');
 			$('.desktop img').hide();
+			$('.thing').addClass('thing');
 		});
 	});
 
@@ -58,6 +61,7 @@ $(document).ready(function() {
 		$('.l-three').on('mouseout', function() {
 			$('.l-three .list-group-item').removeClass('active');
 			$('.desktop img').hide();
+			$('.thing').addClass('thing');
 		});
 	});
 
